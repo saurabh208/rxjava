@@ -1,0 +1,325 @@
+mvn -f REACTIVEJAVA/Reactive-RxJava/pom.xml clean install
+##SimpleIntroduction
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT.jar org.mk.training.reactivestyle.reallysimple.PublisherCell
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT.jar org.mk.training.reactivestyle.simple.SimpleCell
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT.jar org.mk.training.reactivestyle.simple.ArithmeticCell
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT.jar org.mk.training.reactivestyle.temperature.Main
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT.jar org.mk.training.reactivestyle.temperature.MainCelsius
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.reactivestyle.temperature.rxjava.Main
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.reactivestyle.temperature.rxjava.MainCelsius
+
+
+#Rxjava#Factories
+
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.ono.Observable_Create
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.ono.Observable_Create2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.ono.Observable_Just
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.ono.Observable_FromIterable
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.ono.ObserverImpl
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.ono.ObserverImpl2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.ono.ObserverImpl3
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.ono.Cold
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.ono.Cold2
+
+
+wget https://download2.gluonhq.com/openjfx/19/openjfx-19_linux-x64_bin-sdk.zip -P $WORK_HOME/resources
+unzip $WORK_HOME/resources/openjfx-19_linux-x64_bin-sdk.zip -d $WORK_HOME/resources/
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar --module-path $WORK_HOME/resources/javafx-sdk-19/lib --add-modules=javafx.controls org.mk.training.rxjava.ono.Hot
+
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.ono.ConnectableObservables
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.ono.Range
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.ono.Interval
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.ono.Interval2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.ono.Interval3
+
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.ono.Defer
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.ono.Defer2
+
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.ono.FromCallable
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.ono.FromCallable2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.ono.Single
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.ono.Single2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.ono.Maybe
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.ono.Maybe2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.ono.MaybeFirstElement
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.ono.Completable
+
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.ono.Disposable
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.ono.Disposable2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.ono.DisposableComposite
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.ono.DisposableCreate
+
+#Rxjava#Operators
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.TakeWhile
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.SkipWhile
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.DefaultIfEmpty
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.SwitchIfEmpty
+
+
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.Filter
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.Take
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.TakeTimeUnit
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.Skip
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.Distinct
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.DistinctKeySelector
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.DistinctUntilChanged
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.DistinctUntilChangedKeySelector
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.ElementAt
+
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.Map
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.StartWithItem
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.StartWithArray
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.Sorted
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.Sorted2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.Sorted3
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.Scan
+
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.Count
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.Reduce
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.Reduce2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.All
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.Any
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.IsEmpty
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.Contains
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.SequenceEqual
+
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.ToList
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.ToList2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.ToList3
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.ToSortedList
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.ToMap
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.ToMap2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.ToMap3
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.ToMap4
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.ToMultimap
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.Collect
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.Collect2
+
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.Error
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.OnErrorReturnItem
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.OnErrorReturn
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.Error2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.OnErrorResumeWith
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.OnErrorResumeWith2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.OnErrorResumeNext
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.Retry
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.Retry2
+
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.DoOnNext
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.DoAfterNext
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.DoOnComplete
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.DoOnError
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.DoOnEach
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.DoOnEach2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.DoOnEach3
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.DoOnDispose
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.DoOnDispose2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.DoOnSuccess
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.DoFinally
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.DoFinally2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.DoFinally3
+
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.Delay
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.Repeat
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.Single
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.Single2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.Timestamp
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.Timestamp2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.TimeInterval
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.operators.TimeInterval2
+
+#Rxjava#Combining
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.combining.Merge
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.combining.MergeWith
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.combining.MergeArray
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.combining.MergeList
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.combining.Merge2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.combining.Flatmap
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.combining.Flatmap2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.combining.Flatmap3
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.combining.Flatmap4
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.combining.Flatmap5
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.combining.Concat
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.combining.ConcatWith
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.combining.Concat2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.combining.ConcatMap
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.combining.Ambigous
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.combining.Zip
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.combining.Zip2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.combining.CombineLatest
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.combining.WithLatestFrom
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.combining.GroupBy
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.combining.GroupBy2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.combining.GroupBy3
+
+#Rxjava#MRC
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.mrc.Multicast
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.mrc.Multicast2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.mrc.MulticastWithOperator
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.mrc.MulticastWithOperator2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.mrc.MulticastWithOperator3
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.mrc.MulticastWithOperator4
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.mrc.AutoConnect
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.mrc.AutoConnect2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.mrc.AutoConnect3
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.mrc.RefCount
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.mrc.Replay
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.mrc.Replay2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.mrc.Replay3
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.mrc.Cache
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.mrc.PublishSubject
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.mrc.PublishSubject2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.mrc.PublishSubject3
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.mrc.BehaviorSubject
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.mrc.ReplaySubject
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.mrc.AsyncSubject
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.mrc.UnicastSubject
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.mrc.UnicastSubject2
+
+#Rxjava#Concurrency
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.concurrency.SubscribeOn
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.concurrency.SubscribeOn2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.concurrency.SubscribeOn3
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.concurrency.BlockingSubscribe
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.concurrency.SubscribeOn4
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.concurrency.SubscribeOn5
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.concurrency.SubscribeOn6
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.concurrency.SubscribeOn7
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.concurrency.SubscribeOn8
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.concurrency.SubscribeOn9
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.concurrency.SubscribeOn10
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.concurrency.ObserveOn
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.concurrency.ObserveOn2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar --module-path $WORK_HOME/resources/javafx-sdk-19/lib --add-modules=javafx.controls org.mk.training.rxjava.concurrency.ObserveOn3
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.concurrency.Parallelization
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.concurrency.Parallelization2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.concurrency.Parallelization3
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.concurrency.UnsubscribeOn
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.concurrency.UnsubscribeOn2
+
+#Rxjava#STWB
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.stwb.Buffer
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.stwb.Buffer2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.stwb.Buffer3
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.stwb.Buffer4
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.stwb.Buffer5
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.stwb.Buffer6
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.stwb.Buffer7
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.stwb.Buffer8
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.stwb.Window
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.stwb.Window2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.stwb.Window3
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.stwb.Window4
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.stwb.Throttle
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar --module-path $WORK_HOME/resources/javafx-sdk-19/lib --add-modules=javafx.controls org.mk.training.rxjava.stwb.Throttle2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.stwb.Switch
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.stwb.Switch2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar --module-path $WORK_HOME/resources/javafx-sdk-19/lib --add-modules=javafx.controls org.mk.training.rxjava.stwb.Switch3
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar --module-path $WORK_HOME/resources/javafx-sdk-19/lib --add-modules=javafx.controls org.mk.training.rxjava.stwb.Switch4
+
+
+#Rxjava#Flowable
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.flowable.BackPressure
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.flowable.BackPressure2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.flowable.Flowable
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.flowable.Flowable2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.flowable.Flowable3
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.flowable.FlowableSubscribe
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.flowable.FlowableSubscribeExplicitBackPressured
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.flowable.BackPressureStrategy
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.flowable.BackPressureStrategy2
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.flowable.BackPressureStrategy3
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.flowable.BackPressureStrategy4
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.flowable.BackPressureStrategy5
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.flowable.BackPressureStrategy6
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.flowable.BackPressureStrategy7
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.flowable.BackPressureStrategy8
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.flowable.FlowableGenerate
+java -cp REACTIVEJAVA/Reactive-RxJava/target/RxJava-1.0-SNAPSHOT-jar-with-dependencies.jar org.mk.training.rxjava.flowable.FlowableGenerate2
+
+#Rxjava#SpringData
+docker run -d --name fastapi-mongo -p 27017:27017 mongo:4.4
+gradle build -p REACTIVEJAVA/Reactive-RxJava-Data/
+java -cp REACTIVEJAVA/Reactive-RxJava-Data/build/libs/patient-service-1.0.0-SNAPSHOT.jar org.springframework.boot.loader.JarLauncher
+
+gradle build -p REACTIVEJAVA/Reactive-RxJava-Data/ && java -jar REACTIVEJAVA/Reactive-RxJava-Data/build/libs/* &
+curl http://localhost:8084/actuator/loggers/com.stillwaters.medconnect
+curl -i -X POST -H 'Content-Type: application/json' -d '{"configuredLevel": "DEBUG"}' http://localhost:8084/actuator/loggers/com.stillwaters.medconnect
+http://localhost:7002/openapi/webjars/swagger-ui/index.html?configUrl=/openapi/v3/api-docs/swagger-config
+http -v http://localhost:7002/patient/1234
+body='{
+  "medicalRecordNumber": "1234",
+  "firstName": "Srinivasa",
+  "lastName": "Ramanujam",
+  "middleName": "string",
+  "dateOfBirth": "2022-09-27T12:26:44.868Z",
+  "homePhone": "string",
+  "mobilePhone": "string",
+  "nextOfKin_lastname": "string",
+  "nextOfKin_firstname": "string",
+  "serviceAddress": "string",
+  "gender": "MALE",
+  "allergies": [
+    "string"
+  ],
+  "allergiesReaction": [
+    "string"
+  ],
+  "medicationList": [
+    "string"
+  ],
+  "knownMedicalCondtions": [
+    "string"
+  ],
+  "concerns": "string",
+  "address": "string"
+}'
+
+
+echo "$body" | http -v post http://localhost:7002/patient
+
+
+#Reactor#SpringData
+docker run -d --name fastapi-mongo -p 27017:27017 mongo:4.4
+docker stop fastapi-mongo && docker rm fastapi-mongo
+gradle build -p REACTIVEJAVA/Reactive-Reactor-Data/ && java -jar REACTIVEJAVA/Reactive-Reactor-Data/build/libs/* &
+curl http://localhost:8084/actuator/loggers/com.stillwaters.medconnect
+curl -i -X POST -H 'Content-Type: application/json' -d '{"configuredLevel": "DEBUG"}' http://localhost:8084/actuator/loggers/com.stillwaters.medconnect
+http://localhost:7002/openapi/webjars/swagger-ui/index.html?configUrl=/openapi/v3/api-docs/swagger-config
+http -v http://localhost:7002/patient/1234
+body='{
+  "medicalRecordNumber": "1234",
+  "firstName": "Srinivasa",
+  "lastName": "Ramanujam",
+  "middleName": "string",
+  "dateOfBirth": "2022-09-27T12:26:44.868Z",
+  "homePhone": "string",
+  "mobilePhone": "string",
+  "nextOfKin_lastname": "string",
+  "nextOfKin_firstname": "string",
+  "serviceAddress": "string",
+  "gender": "MALE",
+  "allergies": [
+    "string"
+  ],
+  "allergiesReaction": [
+    "string"
+  ],
+  "medicationList": [
+    "string"
+  ],
+  "knownMedicalCondtions": [
+    "string"
+  ],
+  "concerns": "string",
+  "address": "string"
+}'
+
+echo "$body" | http -v post http://localhost:7002/patient
+
+
+#Reactor#Integrated
+gradle build -p REACTIVEJAVA/IntegratedExamples/ && docker-compose -f REACTIVEJAVA/IntegratedExamples/docker-compose.yml build && docker-compose -f REACTIVEJAVA/IntegratedExamples/docker-compose.yml u
+
+
+
